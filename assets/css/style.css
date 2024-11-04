@@ -152,3 +152,22 @@ ul li {
         visibility: hidden;
     }
 }
+
+/* Estilo da section para flexbox */
+section {
+    align-items: center; /* Alinha a imagem e o texto verticalmente */
+    padding: 1rem; /* Espaçamento interno da secção */
+}
+
+/* Ajuste da imagem para ocupar a altura total da secção */
+section img {
+    height: 100%; /* Altura da secção */
+    width: 5%; /* Largura ajustável */
+    object-fit: cover; /* Garante que a imagem preencha a altura sem distorção */
+    margin-right: 1rem; /* Espaçamento entre a imagem e o parágrafo */
+}
+
+/* Estilo do parágrafo */
+section p {
+    flex: 1; /* O parágrafo ocupa o espaço restante */
+}
