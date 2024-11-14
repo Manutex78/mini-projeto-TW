@@ -3,32 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio de Manuel Teixeira</title>
+    <title>Portfólio Manuel</title>
     <link rel="stylesheet" href="assets/css/style.css">
+</head>
 <body>
-    <header>
-        
-        <div id="loading">
-            <div class="loader"></div>
-        </div>
-        
-        <h1>Manuel Teixeira</h1>
-        <nav>
-            <a href="#sobre">Sobre Mim</a>
-            <a href="#projetos">Projetos</a>
-            <a href="#habilidades">Habilidades</a>
-            <a href="#contato">Contato</a>
-        </nav>
-    </header>
+    <!-- Overlay de carregamento -->
+    <div id="loading">
+        <div class="loader"></div>
+    </div>
 
-    <section id="sobre">
-        <h2 id="title-sobre" class="section-title">Sobre Mim</h2>
-        <img src="assets/img/receita1.jpg" alt="EU :D" height="100%">
+    <header>
+        <h1>Meu Portfólio</h1>
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">&#9776;</label>
+    </header>
+    
+    <nav>
+        <a href="#sobre">Sobre</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#contato">Contato</a>
+    </nav>
+
+    <section id="sobre" class="animate">
+        <h2 class="section-title">Sobre Mim</h2>
+        <img src="assets/img/receita.jpg" alt="EU :D" height="100%">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.</p>
     </section>
     
-    <section id="projetos">
-        <h2 id="title-projetos" class="section-title">Projetos</h2>
+    <section id="projetos" class="animate">
+        <h2 class="section-title">Projetos</h2>
         <div class="projeto">
             <h3>Nome do Projeto 1</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -43,8 +47,8 @@
         </div>
     </section>
     
-    <section id="habilidades">
-        <h2 id="title-habilidades" class="section-title">Habilidades</h2>
+    <section id="habilidades" class="animate">
+        <h2 class="section-title">Habilidades</h2>
         <ul>
             <li>HTML</li>
             <li>CSS</li>
@@ -52,8 +56,8 @@
         </ul>
     </section>
     
-    <section id="contato">
-        <h2 id="title-contato" class="section-title">Contato</h2>
+    <section id="contato" class="animate">
+        <h2 class="section-title">Contato</h2>
         <p>
             <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Ícone de Email" class="contact-icon">
             teuemail@exemplo.com
@@ -67,9 +71,7 @@
             github.com/teu-username
         </p>
     </section>
-    
-    
-    
+
     <footer>
         <p>© 2024 Manuel Teixeira</p>
     </footer>

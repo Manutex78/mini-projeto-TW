@@ -1,4 +1,4 @@
-/* Resto do CSS */
+/* Reset básico */
 * {
     margin: 0;
     padding: 0;
@@ -9,33 +9,23 @@ body {
     font-family: Arial, sans-serif;
     color: #333;
     line-height: 1.6;
-    margin-top: 5%;
     background-color: #f4f4f9;
+    scroll-behavior: smooth;
 }
 
-header {
-    background-color: #1e3a5f;
-    color: #fff;
-    padding: 1rem 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed; 
-    width: 100%;
-    top: 0; 
-    z-index: 1000; 
-    
-}
-
-header h1 {
-    margin: 0;
-    font-size: 1.5rem;
-}
-
+/* Menu lateral */
 nav {
+    background-color: #1e3a5f;
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2rem;
     gap: 15px;
-    
 }
 
 nav a {
@@ -47,19 +37,73 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #3a5a8d; 
-    color: #e0e6ed; 
+    background-color: #3a5a8d;
+    color: #e0e6ed;
 }
 
 nav a:active {
-    opacity: 0.8; /* reduz ligeiramente a opacidade */
+    opacity: 0.8;
 }
 
 /* Estilos das secções */
 section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     padding: 2rem;
+    margin: 1rem 0;
+    margin-left: 270px; /* Espaço para o menu lateral */
+    max-width: 800px;
+    margin-right: auto; /* Centraliza o conteúdo */
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: slideIn 0.8s ease-out;
 }
 
+/* Efeito de loading */
+#loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #1e3a5f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2000;
+    animation: fadeOut 1.5s ease 3s forwards;
+}
+
+.loader {
+    border: 6px solid #f4f4f9;
+    border-top: 6px solid #3a5a8d;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+/* Cores de fundo das secções */
 #sobre {
     background-color: #d1dbe5;
 }
@@ -76,18 +120,46 @@ section {
     background-color: #f0f4f8;
 }
 
-section h2 {
+/* Títulos das secções */
+.section-title {
+    font-size: 1.8rem;
     color: #1e3a5f;
+    margin-bottom: 1rem;
+    position: relative;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    left: -20px; /* Desalinha o título para a esquerda */
 }
 
+.section-title:hover::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #3a5a8d;
+    transition: width 0.4s ease;
+}
+
+/* Estilo de cada projeto */
 .projeto {
     background-color: #e0e6ed;
     padding: 1rem;
     margin-bottom: 1rem;
     border-radius: 8px;
-    box-shadow: 5px 5px 2px #bbbbbb;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+    padding-left: 30px; /* Alinhamento do conteúdo */
 }
 
+.projeto:hover {
+    transform: scale(1.02);
+    background-color: #dbe5f0;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Estilo do footer */
 footer {
     background-color: #1e3a5f;
     color: #fff;
@@ -95,6 +167,7 @@ footer {
     padding: 1rem;
 }
 
+/* Estilo das listas */
 ul {
     list-style-type: square;
     padding-left: 1.5rem;
@@ -104,73 +177,37 @@ ul li {
     color: #333;
 }
 
+/* Ícones de contato */
 .contact-icon {
-    width: 20px; /* ajusta o tamanho conforme necessário */
+    width: 20px;
     height: auto;
     vertical-align: middle;
-    margin-right: 8px; /* espaço entre o ícone e o texto */
-}
-
-/* Overlay de loading */
-#loading {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    /*background: rgb(139,133,187);
-    background: linear-gradient(90deg, rgba(139,133,187,1) 0%, rgba(48,105,172,1) 35%, rgba(177,0,255,1) 100%);*/
-    background-color: #1e3a5f;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 2000;
-    animation: fadeOut 1s ease 2s forwards; /* Oculta o loader após 2 segundos */
-}
-
-/* Animação do loader */
-.loader {
-    border: 6px solid #f4f4f9;
-    border-top: 6px solid #3a5a8d;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    animation: spin 1s linear infinite;
-}
-
-/* Animação de rotação */
-@keyframes spin {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
-}
-
-/* Animação de desaparecimento */
-@keyframes fadeOut {
-    to {
-        opacity: 0;
-        visibility: hidden;
-    }
-}
-
-/* Estilo da section para flexbox */
-section {
-    align-items: center; /* Alinha a imagem e o texto verticalmente */
-    padding: 1rem; /* Espaçamento interno da secção */
+    margin-right: 8px;
 }
 
 /* Ajuste da imagem para ocupar a altura total da secção */
 section img {
-    height: 100%; /* Altura da secção */
-    width: 5%; /* Largura ajustável */
-    object-fit: cover; /* Garante que a imagem preencha a altura sem distorção */
-    margin-right: 1rem; /* Espaçamento entre a imagem e o parágrafo */
+    height: 100%;
+    width: auto;
+    object-fit: cover;
+    margin-right: 1rem;
+    border-radius: 6px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 /* Estilo do parágrafo */
 section p {
-    flex: 1; /* O parágrafo ocupa o espaço restante */
+    flex: 1;
+    padding-left: 30px;
+    color: #555;
+}
+
+/* Ocultar menu superior em modo responsivo */
+.menu-icon, #menu-toggle {
+    display: none;
 }
