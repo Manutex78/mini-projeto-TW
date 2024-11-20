@@ -153,19 +153,6 @@ body{
     margin-bottom: 30px;
 }
 
-.hero__actions,
-.skills__actions{
-    display: flex;
-    gap: 10px;
-}
-
-.hero__actions .btn,
-.skills__actions .btn{
-    padding: 6px 20px;
-    font-size: 12px;
-    font-weight: 500;
-}
-
 .hero__socials{
     position: absolute;
     display: flex;
