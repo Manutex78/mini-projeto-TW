@@ -1,298 +1,82 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-PT">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio Manuel</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
+    <title>Portefólio de Erick "Aspas" Santos</title>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+    <header class="header">
+        <h1>Erick "Aspas" Santos</h1>
+        <p>Jogador Profissional de Valorant</p>
+    </header>
 
-    <nav class="navbar">
-        <a href="#" class="navbar__logo">"Icon"</a>
-
-        <div class="navbar_menu">
-            <a href="#sobre" class="navbar__link">Sobre</a>
-            <a href="#habilidades" class="navbar__link">Habilidades</a>
-            <a href="#projetos" class="navbar__link">Projetos</a>
-            <a href="#contato" class="navbar__link">Contato</a>
-        </div>
-
-        <div class="navbar__actions">
-            <button class="btn">Get a Quote</button>
-        </div>
-        
+    <nav class="menu">
+        <ul>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#carreira">Carreira</a></li>
+            <li><a href="#titulos">Títulos e Recordes</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
     </nav>
 
-    <section class="hero">
-
-        <div class="hero__content">
-            <img src="assets/profile.png" alt="Profile Image" class="hero__image">
-            <h2 class="section-title">Olá! Sou o Manuel</h2>
-        </div>
-
-        <div class="hero__intro">
-            <h3>Aspirante a Back-end Developer</h3>
-            <p>Programo à cerca de 3 anos comecei com Python, aprendi PHP e atualmente estou a aprender JavaScript e C</p>
-        </div>
-        
-        <div class="hero__socials">
-            <a href="#"><i class="ri-instagram-line"></i></a>
-            <a href="#"><i class="ri-dribbble-line"></i></a>
-            <a href="#"><i class="ri-linkedin-box-line"></i></a>
-            <a href="#"><i class="ri-github-line"></i></a>
-        </div>
-    </section>
-    
-    <section class="skills">
-
-        <div class="skills__desc">
-            <h3>Titulo</h3>
-            <p>Aspirante a desenvolvedor web, com foco em aprender e melhorar constantemente.</p>
-        
-        </div>
-
-        <div class="skills__stats">
-            <i class="ri-codepen-line"></i>
-            <div class="skill__info">
-                <h5>40+</h5>
-                <p>JavaScript Projects</p>
+    <main>
+        <section id="sobre" class="secao">
+            
+            <div class="texto">
+                <h2>Sobre</h2>
+                <p>Nascido a 15 de junho de 2003, Erick 'aspas' Santos é um dos maiores nomes do VALORANT esports. 
+                    Reconhecido pela sua habilidade como duelista, aspas é conhecido por carregar jogos em momentos críticos, ajudando as suas equipas a alcançar feitos impressionantes no cenário competitivo. 
+                    Atualmente, representa a Leviatán Esports, continuando a inspirar a comunidade global com o seu talento e dedicação.</p>
             </div>
-            <i class="ri-reactjs-line"></i>
-            <div class="skill__info">
-                <h5>12+</h5>
-                <p>Remote Projects</p>
-            </div>
-            <div class="skill__info">
-                <h5>50+</h5>
-                <p>Codepen Projects</p>
-            </div>
-            <i class="ri-rocket-line"></i>
-            <div class="skill__info">
-                <h5>20+</h5>
-                <p>React Projects</p>
-            </div>
-            <i class="ri-remote-control-line"></i>
-        </div>
-    </section>
-
-    <section class="showcase">
-
-        <div class="showcase__header">
-            <h3>I Can Help You With:</h3>
-            <button class="btn">See My Work</button>
-        </div>
-
-        <div class="showcase_categories">
-            <section class="category">
-                <div class="category__header">
-                    <div class="category__title">
-                        <i class="ri-macbook-line"></i>
-                        <h4>Portfolio Websites</h4>
-                    </div>
-                    <div class="category__desc">
-                        <p>Designing and developing eye-catching, fully responsive portfolio websites that highlight
-                            your skills and projects, ensuring a professional online presence.</p>
-                        <a href="#"><i class="ri-share-circle-line"></i></a>
-                    </div>
-                </div>
-
-                <div class="category__projects">
-                    <div class="project-card">
-                        <img src="assets/item-1.png" alt="Portfolio 1" class="project-card__image">
-                        <div class="project-card__info">
-                            <h5>Portfolio-1</h5>
-                            <p>August 2023</p>
-                        </div>
-                        <p class="project-card__desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                            Sit autem soluta consequatur, sequi
-                            et sint laudantium non rem veritatis.</p>
-                        <button class="btn">View Live Demo</button>
-                    </div>
-                    <div class="project-card">
-                        <img src="assets/item-2.png" alt="Portfolio 2" class="project-card__image">
-                        <div class="project-card__info">
-                            <h5>Portfolio-2</h5>
-                            <p>August 2023</p>
-                        </div>
-                        <p class="project-card__desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                            Sit autem soluta consequatur, sequi
-                            et sint laudantium non rem veritatis.</p>
-                        <button class="btn">View Live Demo</button>
-                    </div>
-                    <div class="project-card">
-                        <img src="assets/item-3.jpg" alt="Portfolio 3" class="project-card__image">
-                        <div class="project-card__info">
-                            <h5>Portfolio-3</h5>
-                            <p>August 2023</p>
-                        </div>
-                        <p class="project-card__desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                            Sit autem soluta consequatur, sequi
-                            et sint laudantium non rem veritatis.</p>
-                        <button class="btn">View Live Demo</button>
-                    </div>
-                    <div class="project-card">
-                        <img src="assets/item-4.png" alt="Portfolio 4" class="project-card__image">
-                        <div class="project-card__info">
-                            <h5>Portfolio-4</h5>
-                            <p>August 2023</p>
-                        </div>
-                        <p class="project-card__desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                            Sit autem soluta consequatur, sequi
-                            et sint laudantium non rem veritatis.</p>
-                        <button class="btn">View Live Demo</button>
-                    </div>
-                </div>
-
-            </section>
-
-            <section class="category">
-                <div class="category__header">
-                    <div class="category__title">
-                        <i class="ri-group-2-line"></i>
-                        <h4>Website Development</h4>
-                    </div>
-                    <div class="category__desc">
-                        <p>End-to-end development of responsive websites that look great on all devices, with a focus on
-                            performance and aesthetics.</p>
-                        <a href="#"><i class="ri-share-circle-line"></i></a>
-                    </div>
-                </div>
-
-                <div class="category__projects">
-                    <div class="project-card">
-                        <img src="assets/item-5.png" alt="NFT Landing" class="project-card__image">
-                        <div class="project-card__info">
-                            <h5>NFT Landing</h5>
-                            <p>August 2023</p>
-                        </div>
-                        <p class="project-card__desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                            Sit autem soluta consequatur, sequi
-                            et sint laudantium non rem veritatis.</p>
-                        <button class="btn">View Live Demo</button>
-                    </div>
-                        <div class="project-card">
-                            <img src="assets/item-6.png" alt="Music Platform" class="project-card__image">
-                            <div class="project-card__info">
-                                <h5>Music Platform</h5>
-                                <p>August 2023</p>
-                            </div>
-                            <p class="project-card__desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                                Sit autem soluta consequatur, sequi
-                                et sint laudantium non rem veritatis.</p>
-                            <button class="btn">View Live Demo</button>
-                        </div>
-                        <div class="project-card">
-                            <img src="assets/item-7.png" alt="Crypto Market" class="project-card__image">
-                            <div class="project-card__info">
-                                <h5>Crypto Market</h5>
-                                <p>August 2023</p>
-                            </div>
-                            <p class="project-card__desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                                Sit autem soluta consequatur, sequi
-                                et sint laudantium non rem veritatis.</p>
-                            <button class="btn">View Live Demo</button>
-                        </div>
-                        <div class="project-card">
-                            <img src="assets/item-8.png" alt="Jobs Platform" class="project-card__image">
-                            <div class="project-card__info">
-                                <h5>Jobs Platform</h5>
-                                <p>August 2023</p>
-                            </div>
-                            <p class="project-card__desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                                Sit autem soluta consequatur, sequi
-                                et sint laudantium non rem veritatis.</p>
-                            <button class="btn">View Live Demo</button>
-                        </div>
-                    </div>
-
-                </section>
-
-            </div>
-
+            <img width="1" height="1" src="assets/img/imgAspas.jpg" alt="Foto do Aspas">
         </section>
 
-        <section class="career">
-        <div class="career__jobs">
-            <h3>Work Experience</h3>
-            <div class="job">
-                <i class="ri-pen-nib-line"></i>
-                <div class="job__info">
-                    <h5>Frontend Developer at <span>TechCorp</span></h5>
-                    <p>February 2020 - Present</p>
-                </div>
+        <section id="carreira" class="secao">
+            <img width="1" height="1" src="assets/img/aspas2.jpg" alt="Aspas com o troféu do VCT Americas 2023">
+            <div class="texto">
+                <h2>Carreira</h2>
+                    <p>A carreira de aspas começou com destaque na equipa SLICK, mas foi ao juntar-se à LOUD, a 3 de fevereiro de 2022, que ele alcançou a fama internacional. 
+                    Na LOUD, ajudou a equipa a conquistar o título mundial no <b>Valorant Champions 2022</b> e obteve vários títulos nacionais e internacionais. 
+                    Em 2024, após sair da LOUD, aspas juntou-se à Leviatán Esports. Sob a sua liderança, a equipa destacou-se ao conquistar o <b>VCT Americas Stage 2</b> e participar no <b>VCT Masters Shanghai</b>. 
+                    Aspas foi premiado como <b>MVP do VCT Americas 2024</b> e <b>Duelist of the Year</b>, reforçando o seu status como um dos melhores jogadores da história do VALORANT.</p>
             </div>
-            <div class="job">
-                <i class="ri-reactjs-fill"></i>
-                <div class="job__info">
-                    <h5>React Developer at <span>WebSolutions</span></h5>
-                    <p>February 2018 – February 2020</p>
-                </div>
-            </div>
-            <div class="job">
-                <i class="ri-paint-brush-line"></i>
-                <div class="job__info">
-                    <h5>UI/UX Developer at <span>StartupX</span></h5>
-                    <p>March 2016 – January 2018</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="career__awards">
-            <h3>Awards & Recognition</h3>
-            <div class="award">
-                <div>
-                    <i class="ri-medal-fill"></i>
-                    <div class="award__info">
-                        <h5>Fron-Dev of the Year at <span>Dev Awards</span></h5>
-                        <p>November 2023</p>
-                    </div>
-                </div>
-                <a href="#"><i class="ri-external-link-line"></i></a>
-            </div>
-            <div class="award">
-                <div>
-                    <i class="ri-javascript-line"></i>
-                    <div class="award__info">
-                        <h5>Code Mastery Award at <span>CodeFest</span></h5>
-                        <p>January 2023</p>
-                    </div>
-                </div>
-                <a href="#"><i class="ri-external-link-line"></i></a>
-            </div>
-            <div class="award">
-                <div>
-                    <i class="ri-award-fill"></i>
-                    <div class="award__info">
-                        <h5>Top Designer at <span>Design Awards</span></h5>
-                        <p>August 2022</p>
-                    </div>
-                </div>
-                <a href="#"><i class="ri-external-link-line"></i></a>
-            </div>
-        </div>
-
+            
         </section>
 
-        <section class="contact">
-            <h5>Got a Projects?</h5>
-            <h2>Let's Work Together!</h2>
-            <button class="btn">Send Message</button>
-            <p>Phone: <span>+11111111111</span></p>
+        <section id="titulos" class="secao">
+            
+            <div class="texto">
+                <h2>Títulos e Recordes</h2>
+                <ul>
+                    <li>Campeão do <b>Valorant Champions 2022</b> com a LOUD.</li>
+                    <li>Bicampeão do <b>VCT Americas</b> (2023 e 2024).</li>
+                    <li>Primeiro jogador a alcançar <b>1000 abates no Valorant Champions</b>, somando um total de 1046 abates em três edições (2022-2024).</li>
+                    <li><b>Recorde de abates numa única partida</b> na era das Ligas Internacionais em 2024 (47 abates).</li>
+                </ul>
+            </div>
+            <img width="1" height="1" src="assets/img/AspasChampions.jpg" alt="Aspas com o troféu do Valorant Champions">
         </section>
 
-        <footer class="footer">
-            <div class="footer__brand">
-                <a href="#">Logo.</a>
-                <p>© 2024 AsmrProg YouTube Channel.</p>
+        <section id="contacto" class="secao">
+           
+            <div class="texto">
+                <h2>Redes Sociais</h2>
+                <p>Para acompanhar melhor a carreira do Aspas segue-o nas redes sociais:</p>
+                <ul>
+                    <li><a href="https://x.com/aspaszin" target="_blank">Twitter</a></li>
+                    <li><a href="https://www.instagram.com/aspaszin?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">Instagram</a></li>
+                    <li><a href="https://www.tiktok.com/@aspaszin?is_from_webapp=1&sender_device=pc" target="_blank">TikTok</a></li>
+                    <li><a href="https://youtube.com/@aspaszin?si=n5193mIHBojj6Ch3">YouTube</a></li>
+                </ul>
             </div>
-            <div class="footer__links">
-                <a href="#">Home</a>
-                <a href="#">Projects</a>
-                <a href="#">Skills</a>
-                <a href="#">About</a>
-            </div>
-        </footer>
+            <img width="1" height="1" src="assets/img/aspas.jpg" alt="Aspas com o trofeu do VCT Americas 2024">
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 Portefólio Erick "Aspas" Santos. Todos os direitos reservados.</p>
+    </footer>
 </body>
 </html>

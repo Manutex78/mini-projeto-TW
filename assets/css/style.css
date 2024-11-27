@@ -161,3 +161,69 @@ a:hover {
         opacity: 1;
     }
 }
+
+/* Estilos Responsivos */
+@media (max-width: 768px) {
+    /* Ajustar o layout para telas menores */
+    .secao {
+        flex-direction: column; /* Empilha os elementos verticalmente */
+        padding: 20px;
+    }
+
+    .secao img {
+        flex: none; /* Remove a proporção flexível */
+        margin-bottom: 20px; /* Adiciona espaço abaixo da imagem */
+    }
+
+    .menu ul {
+        flex-direction: column; /* Empilha os itens do menu */
+        gap: 15px; /* Espaçamento entre itens */
+    }
+
+    .menu a {
+        padding: 10px 15px; /* Reduz o espaçamento interno */
+        font-size: 0.9em; /* Reduz o tamanho do texto */
+    }
+
+    .header h1 {
+        font-size: 2em; /* Reduz o tamanho do título */
+    }
+
+    .header p {
+        font-size: 1em; /* Reduz o tamanho do subtítulo */
+    }
+
+    .secao .texto {
+        flex: none; /* Remove a proporção flexível */
+        text-align: center; /* Centraliza o texto */
+    }
+}
+
+@media (max-width: 480px) {
+    /* Ajustes adicionais para telas muito pequenas */
+    body {
+        font-size: 0.9em; /* Reduz o tamanho global do texto */
+    }
+
+    .menu ul {
+        gap: 10px;
+    }
+
+    .menu a {
+        font-size: 0.8em;
+        padding: 8px 12px;
+    }
+
+    .header h1 {
+        font-size: 1.8em;
+    }
+
+    .header p {
+        font-size: 0.9em;
+    }
+
+    .secao img {
+        width: 100%; /* Garante que a imagem ocupe toda a largura disponível */
+        height: auto;
+    }
+}
